@@ -1,30 +1,34 @@
 //seleziono il mio container della griglia
 const myContainer = document.querySelector('.myContainer');
-//memorizzo il value dell'option di livello di difficoltá
+//memorizzo il tag select
 const selectDifficult = document.getElementById('selectDifficult');
-let valueDifficult = selectDifficult.value;
-//numberSquare é l'argomento da passare alla funzione initGrid() per generare la griglia e cambierá il suo valore in base al value di valueDifficult.
 
-
+//all'interno di myContainer scrivo un istruzione per il giocatore. questa frase viene visualizzata solo al caricamento della pagina
+myContainer.innerHTML = `
+   <h2 class="text-center">Seleziona il livello di difficoltá e genera la griglia</h2>
+`;
 //genero la griglia una volta cliccato il bottone PLAY
 const playButton = document.querySelector('header .play button.btn_custom');
 
 playButton.addEventListener('click', function () {
-   
-//per generare la griglia ho bisogno di passare alla funzione un argomento che indichi la dimensione della stessa, dipendentemente dalla difficoltá selezionata
-//per cui associo al valueDifficult, un numero di square in base alla difficoltá scelta
 
-   console.log(valueDifficult);
+   //svoto il myContainer prima di generare la griglia
+   myContainer.innerHTML = '';
 
+   //memorizzo il value della difficoltá
+   let valueDifficult = selectDifficult.value;
+   console.log('difficoltá: ', valueDifficult);
 
+   //per generare la griglia ho bisogno di passare alla funzione un argomento che indichi la dimensione della stessa(griglia), dipendentemente dalla difficoltá selezionata
    initGrid(getNumberByValue(valueDifficult));
-   console.log(getNumberByValue(valueDifficult));
+   console.log('Quantitá di square in griglia: ', getNumberByValue(valueDifficult));
 
 });
 
 
 //*********FUNZIONI********** */
 
+//funzione che genera la visualizzazione della griglia
 function initGrid(value) {
    
    //cicolo che crea TOT quadrati dipendentemente dalla difficoltá scelta
