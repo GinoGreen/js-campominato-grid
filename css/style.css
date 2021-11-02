@@ -16,13 +16,39 @@ header {
    font-weight: bold;
    vertical-align: middle;
 }
-.play span {
-   padding: 0 10px;
-}
+
 
 main {
    height: calc(100vh - 170px);
+   display: flex;
+   justify-content: center;
+   align-items: center;
    background-color: #7EFED4;
+}
+.myContainer {
+   height: 500px;
+   width: 500px;
+}
+.square {
+   border: 2px solid #000;
+   float: left;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-weight: bold;
+   cursor: pointer;
+}
+.square.easy {
+   width: calc(100% / 10);
+   height: calc(100% / 10);
+}
+.square.hard {
+   width: calc(100% / 9);
+   height: calc(100% / 9);
+}
+.square.crazy {
+   width: calc(100% / 7);
+   height: calc(100% / 7);
 }
 
 footer {
@@ -31,7 +57,13 @@ footer {
 
 .btn_custom {
    height: 28px;
+   margin: 0 10px;
    padding: 0 24px;
    border-radius: 10px;
    border: none;
+}
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
 }
