@@ -1,0 +1,12 @@
+header {
+   height: 120px;
+}
+
+main {
+   height: calc(100vh - 170px);
+   background-color: #7EFED4;
+}
+
+footer {
+   height: 50px;
+}
