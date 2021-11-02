@@ -2,7 +2,7 @@
 const myContainer = document.querySelector('.myContainer');
 //memorizzo il value dell'option di livello di difficoltá
 // let valueDifficult = document.querySelector('');
-
+const selectDifficult = document.getElementById('selectDifficult');
 
 //genero la griglia una volta cliccato il bottone PLAY
 const playButton = document.querySelector('header .play button.btn_custom');
