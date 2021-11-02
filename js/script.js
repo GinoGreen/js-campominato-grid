@@ -1,7 +1,7 @@
 //seleziono il mio container della griglia
 const myContainer = document.querySelector('.myContainer');
 //memorizzo il value dell'option di livello di difficoltá
-let valueDifficult = document.querySelector('');
+// let valueDifficult = document.querySelector('');
 
 
 //genero la griglia una volta cliccato il bottone PLAY
