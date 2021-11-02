@@ -1,5 +1,23 @@
 header {
    height: 120px;
+   display: flex;
+   align-items: center;
+}
+.logo {
+   cursor: pointer;
+}
+.logo img {
+   width: 50px;
+   vertical-align: middle;
+}
+.logo span {
+   padding: 0 20px;
+   font-size: 30px;
+   font-weight: bold;
+   vertical-align: middle;
+}
+.play span {
+   padding: 0 10px;
 }
 
 main {
@@ -9,4 +27,11 @@ main {
 
 footer {
    height: 50px;
+}
+
+.btn_custom {
+   height: 28px;
+   padding: 0 24px;
+   border-radius: 10px;
+   border: none;
 }
