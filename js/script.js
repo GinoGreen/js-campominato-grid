@@ -1,7 +1,5 @@
 //seleziono il mio container della griglia
 const myContainer = document.querySelector('.myContainer');
-//creo un array di numeri per riempire gli square
-const listNumbers = [];
 //memorizzo il value dell'option di livello di difficoltá
 let valueDifficult = document.querySelector('');
 
